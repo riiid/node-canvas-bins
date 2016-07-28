@@ -1,0 +1,30 @@
+{
+  "name": "node-canvas-bins",
+  "version": "1.0.0",
+  "description": "prebuilt node-canvas binaries",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "rimraf build",
+    "build": "node lib",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "nodemon --watch lib --exec eslint lib/**"
+  },
+  "bin": {
+    "ncb-install": "./bin/install",
+    "ncb-clean": "./bin/clean"
+  },
+  "author": "kykim <kykim@riiid.co>",
+  "license": "MIT",
+  "devDependencies": {
+    "colors": "^1.1.2",
+    "dockerode": "^2.2.10",
+    "eslint": "^3.1.1",
+    "eslint-config-google": "^0.6.0",
+    "lodash": "^4.14.0",
+    "nodemon": "^1.10.0",
+    "pkg-dir": "^1.0.0",
+    "rx": "^4.1.0",
+    "rx-node": "^1.0.2",
+    "tar": "^2.2.1"
+  }
+}
