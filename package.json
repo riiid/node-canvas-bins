@@ -7,7 +7,7 @@
     "prebuild": "rimraf build",
     "build": "node lib",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "nodemon --watch lib --exec eslint lib/**"
+    "lint": "nodemon --watch lib --watch index.js --exec eslint lib/** index.js"
   },
   "bin": {
     "ncb-install": "./bin/install",
